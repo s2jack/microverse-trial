@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css"></link>
+<meta charcode="UTF-8">
+<title>Survey Form
+</title>
+<head>
+  <h1 id="title"> Selcuk Guler Survey Form </h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+</head>
+<body>
+  <form id="survey-form">
+    <fieldset id="info-field">
+    <label id="name-label" for="name"> Full name: <input id="name" type="text" required placeholder="Enter your name" /></label>
+    <label id="email-label" for="email"> E-mail: <input id="email" type="email" required placeholder="Enter your Email"/></label>
+    <label id="number-label" for="number"> Age: <input id="number" type="number" min="13" max="120" placeholder="Age"/></label>
+    </fieldset>
+    <fieldset id="currentrole-field">
+    <label id="dropdown-label"> Which option best describes your current role?
+    <select id="dropdown">
+      <option disabled selected>Select an option</option>
+      <option>Student</option>
+      <option>Full Time Job</option>
+      <option>Full Time Learner</option>
+      <option>prefer not to say</option>
+      <option>Other</option>
+    </select>
+    </label>
+    </fieldset>
+    <fieldset id="recommend-field">
+    <label id="radio-label"> Would you recommend Selcuk Guler to a friend?
+      <label><input id="definitely" type="radio" name="preferred" value="definitely"/>Definitely</label>
+      <label><input id="maybe" type="radio" name="preferred" value="maybe"/>Maybe</label>
+      <label><input id="notsure" type="radio" name="preferred" value="not-sure" />Not Sure</label>
+    </label>
+    </fieldset>
+    <fieldset id="checkbox-field">
+      <label>What would you like to see from us?
+      <label>
+        <input type="checkbox" value="vr-projets"/>
+        VR Projects
+      </label>
+      <label>
+        <input type="checkbox" value="ar-projets"/>
+        AR Projects
+      </label>
+      <label>
+        <input type="checkbox" value="mobilegame-projets"/>
+        Mobile Games
+      </label>
+    </fieldset>
+    <label>We will glad to hear some words about us from you</label><textarea placeholder="Share your ideas..." cols="45" rows="5"></textarea>
+    <input type="submit" id="submit">
+  </form>
+</body>
+</html>
